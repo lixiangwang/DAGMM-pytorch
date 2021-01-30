@@ -36,5 +36,5 @@ You can set your own experimental parameters in the hyp parameter dictionary. No
 
 ## Test
 
-    python train.py
+    python test.py
 The strategy in the code is to extract 80% of the separated normal samples and abnormal samples, and use the shuffle as the training set, and the rest as the test set. When testing, first based on the likelihood in the training set data The function value E(z) is sorted from small to small, and the eighty-percentile value (normal sample in the data set: abnormal sample = 4:1) is intercepted as the threshold for abnormal prediction.
